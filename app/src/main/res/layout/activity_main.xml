@@ -6,24 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/items"
-        android:layout_width="0sp"
+    <FrameLayout
+        android:id="@+id/food_items_frame_layout"
+        android:layout_width="match_parent"
         android:layout_height="0sp"
-        app:layout_constraintBottom_toTopOf="@id/add_food_button"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="15sp"/>
+        />
 
-    <Button
-        android:id="@+id/add_food_button"
-        android:layout_width="wrap_content"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="20sp"
-        android:text="Add New Food"/>
+        app:menu="@menu/menu_bottom_navigation" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

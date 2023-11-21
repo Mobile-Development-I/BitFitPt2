@@ -5,5 +5,4 @@ import android.content.Context
 
 object Constants {
     lateinit var itemAdapter : ItemAdapter
-
 }

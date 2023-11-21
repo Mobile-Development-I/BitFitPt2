@@ -15,4 +15,13 @@ interface FoodItemDao {
 
     @Query("DELETE FROM food_item_table")
     fun deleteAll()
+
+    @Query("SELECT AVG(calories) as average FROM food_item_table")
+    fun getAverageCals(): Flow<Int>
+
+    @Query("SELECT MIN(calories) as minimum FROM food_item_table")
+    fun getMinCals(): Flow<Int>
+
+    @Query("SELECT MAX(calories) as maximum FROM food_item_table")
+    fun getMaxCals(): Flow<Int>
 }

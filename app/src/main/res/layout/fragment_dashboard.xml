@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="15sp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="3sp">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="Average Calories: "
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/average_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                tools:text="137"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="3sp">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="Minimum Serving: "
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/minimum_serving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                tools:text="137"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="3sp">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="Maximum Serving: "
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/maximum_serving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                tools:text="137"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/add_food_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"
+            android:text="Add New Food"/>
+    </LinearLayout>
+
+</FrameLayout>
